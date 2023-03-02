@@ -25,5 +25,5 @@ class StringCompress:
 
 
 if __name__ == "__main__":
-    s = StringCompress
-    print(s.stringCompressSolution(s, ["a", "a", "b", "b", "c", "c", "c"]))
+    sc = StringCompress
+    print(sc.stringCompressSolution(sc, ["a", "a", "b", "b", "c", "c", "c"]))
