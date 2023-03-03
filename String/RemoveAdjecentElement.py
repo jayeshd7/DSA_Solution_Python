@@ -1,6 +1,4 @@
-
 class RemoveAdjecentElement:
-
     def solution(self, s):
         stack = []
 
@@ -12,6 +10,7 @@ class RemoveAdjecentElement:
 
         return "".join(stack)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     r = RemoveAdjecentElement
     print(r.solution(r, "ABCCBCBA"))
