@@ -12,7 +12,7 @@ class FindIndex:
                 j = 0
 
         if j == len(needle):
-            return i-j
+            return i - j
         else:
             return -1
 
