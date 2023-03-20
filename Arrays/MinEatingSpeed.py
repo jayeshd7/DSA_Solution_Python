@@ -4,7 +4,7 @@ from typing import List
 def canFinish(piles, h, mid):
     time = 0
     for pile in piles:
-        time += (pile+mid-1) // mid
+        time += (pile + mid - 1) // mid
     return time <= h
 
 
