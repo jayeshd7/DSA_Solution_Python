@@ -2,11 +2,9 @@ from typing import List
 
 
 class CanPlaceFlowers:
-
     def canPlaceFlowers(self, flowerbed: List[int], n: int) -> bool:
         m = len(flowerbed)
         count = 0
-
 
         for i in range(0, m):
             if count < n:
