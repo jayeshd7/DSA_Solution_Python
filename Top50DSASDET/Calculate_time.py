@@ -10,7 +10,7 @@ def calculate_time(func):
 
         end = time.time()
 
-        print("total time taken", func.__name__ , end - begin)
+        print("total time taken", func.__name__, end - begin)
 
     return inner1
 
