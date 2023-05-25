@@ -1,5 +1,3 @@
-
-
 class Data:
     def __init__(self, data):
         self.data = data
@@ -15,6 +13,7 @@ class DataFrame(Data):
     def summary(self):
         print("DataFrame Summary")
         print(self.data.describe())
+
 
 df = DataFrame
 df.summary(df)

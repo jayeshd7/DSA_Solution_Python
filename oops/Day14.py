@@ -1,7 +1,7 @@
-
-'''
+"""
 class varibale
-'''
+"""
+
 
 class Car:
     num_wheel = 4
