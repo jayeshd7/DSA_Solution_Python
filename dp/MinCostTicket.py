@@ -15,4 +15,5 @@ def minCostTicket(days: List[int], costs: List[int]):
             )
     return dp[365]
 
+
 print(minCostTicket(days=[1, 4, 6, 7, 8, 20], costs=[2, 7, 15]))

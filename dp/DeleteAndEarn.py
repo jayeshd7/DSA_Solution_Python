@@ -2,11 +2,11 @@ import collections
 from typing import List
 
 
-def deleteAndEarn(nums: List[int])-> int:
+def deleteAndEarn(nums: List[int]) -> int:
     nums.sort()
     count = collections.Counter(nums)
 
-    dp = [0 for i in range(max(nums)+1)]
+    dp = [0 for i in range(max(nums) + 1)]
 
     if 1 in count:
         dp[1] = count[1]
@@ -15,11 +15,8 @@ def deleteAndEarn(nums: List[int])-> int:
         p = 0
         if i in count:
             p = count[i] * i
-        dp[i] = max(dp[i-1], dp[i-2]+p)
+        dp[i] = max(dp[i - 1], dp[i - 2] + p)
     return dp[-1]
 
 
-
-
-
-print(deleteAndEarn([3,4,2]))
+print(deleteAndEarn([3, 4, 2]))
